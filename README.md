@@ -32,3 +32,6 @@ Scanning tool written by python,understand some common scanning technique works.
 
 ## Note
 - Arch linux got problem with libpcap and pcapy library, so in TCP SYN and UDP scan pcapy can't timed out that will make tool stuck and freeze.
+
+## Lincese
+[![MIT](https://img.shields.io/badge/LICENSE-MIT-lightgrey.svg)](https://github.com/t7hm1/pmaping/blob/master/LICENSE)
