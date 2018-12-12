@@ -50,10 +50,5 @@ class Handle(object):
 		timeout = args.timeout
 		ports = portHandler(args.port)
 
-		if process == "tcpscan":
-			Scanner("conn",target,ports,threads,timeout,quite)
-		else:
-			if uid == 1000:
-				sys.exit(msgStat(exce.PermissionDenied(),err=True)())
-			elif uid == 0:
-				Scanner(process,target,ports,threads,timeout,quite)
+		try: Scanner(process,target,ports,threads,timeout,quite)
+		except : sys.exit(msgStat(exce.PermissionDenied(),err=True)())
