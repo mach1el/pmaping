@@ -25,7 +25,7 @@ Scanning tool written by python,understand some common scanning technique works.
 		
 - Python libraries
 		
-		pip install pcapy dnspython
+		sudo pip install -r requirements.txt
 
 ## Tested platforms
 - ![UBUNTU](https://img.shields.io/badge/Linux-Ubuntu-orange.svg) ![ARCH LINUX](https://img.shields.io/badge/linux-Arch%20Linux-blue.svg)
